@@ -16,6 +16,7 @@ router.get('/contact', function(req, res, next) {
   res.render('contact');
 });
 
+<<<<<<< HEAD
 router.get('/search',async (req, res) =>{
     let query = userdetails.find()
     if (req.query.bloodgroup != null && req.query.group != '') {
@@ -32,6 +33,12 @@ router.get('/search',async (req, res) =>{
       res.redirect('/')
     }
   });
+=======
+router.get('/login', function(req, res, next) {
+  res.render('login');
+});
+
+>>>>>>> 62caba88c01cb9d58c5b0e56d74b6880a34b824b
 router.get('/events', function(req, res, next) {
   res.render('events');
 });
