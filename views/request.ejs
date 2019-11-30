@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="/images/img/favicon.png" type="image/png">
+        <title>Blood Donation</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+        <link rel="stylesheet" href="/vendors/linericon/style.css">
+        <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+        <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="/stylesheets/responsive.css">
+    </head>
+<body>
+        
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <!-- <a class="navbar-brand logo_h" href="index.html"><img src="/images/img/logo.png" alt=""></a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav menu_nav ml-auto">
+                                <li class="nav-item active"><a class="nav-link" href="/home">Home</a></li> 
+                                <li class="nav-item"><a class="nav-link" href="/about">About</a></li> 
+                                <li class="nav-item submenu dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="nav-item"><a class="nav-link" href="/events">Upcoming Events</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/eventform">Upload an Event</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                                
+                                <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--================ End Header Menu Area =================-->
+     <section class="banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>Send a request</h2>
+                    <!-- <p>Platea nullam nostra laoreet potenti hendrerit laoreet enim nisl</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+   
+<section class="causes_area">
+    <div class="container">
+<!-- <div class="row justify-content-center">
+    <div class="col-md-7 mb-5"> -->
+
+
+
+        <form method="post" action='/request' class="p-5 bg-white">
+
+            <!-- <h2 class="h4 text-black mb-5">Sell your clothes</h2> -->
+
+            <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="Blood Group">Blood Group</label>
+                    <select id="bloodgroup" class="form-control rounded-0" name="bloodgroup">
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                    <option value="A-">A-</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6">
+                    <label class="text-black" for="Notification Type">Notification Type</label>
+                    <input type="number" id="notificationtype" class="form-control rounded-0" name="notificationtype">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="City">City</label>
+                    <select id="city" class="form-control rounded-0" name="city">
+                    <option value="kathmandu">Kathmandu</option>
+                    <option value="lalitpur">Lalitpur</option>
+                    <option value="bhaktapur">Bhaktapur</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="row form-group">
+
+                <div class="col-md-12">
+                    <label class="text-black" for="description">Description</label>
+                    <input type="text" id="description" class="form-control rounded-0" name="description">
+                </div>
+            </div>
+
+
+            <div class="row form-group">
+
+                <div class="col-md-12">
+                    <label class="text-black" for="age">Age</label>
+                    <input type="number" id="age" class="form-control rounded-0" name="age">
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label class="text-black" for="gender">Gender</label>
+                    <select id="gender" class="form-control rounded-0" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-black rounded-0 py-3 px-4">Request </button>
+                </div>
+            </div>
+            
+
+
+           
+
+           
+
+
+        </form>
+    </div>
+
+</div>
+    <script src="/javascripts/jquery-3.2.1.min.js"></script>
+    <script src="/javascripts/popper.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/stellar.js"></script>
+    <script src="/vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="/javascripts/jquery.ajaxchimp.min.js"></script>
+    <script src="/javascripts/mail-script.js"></script>
+    <script src="/javascripts/countdown.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="/javascripts/gmaps.min.js"></script>
+    <script src="/javascripts/theme.js"></script>
+    </body>
+    
+    </html>
