@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 const userdetailsSchema =  mongoose.Schema({
-  name: {
+  bloodgroup: {
     type: String,
     required: true
   },
@@ -9,21 +9,7 @@ const userdetailsSchema =  mongoose.Schema({
     type: String,
     required: true
   },
-  phone: {
-    type: number,
-    required: true
-  },
-  
-  location:{
-      type: String,
-      required:true
-  },
 
-  bloodgroup:{
-      type: String,
-      required: true
-  },
-  
   password: {
     type: String,
     required: true
