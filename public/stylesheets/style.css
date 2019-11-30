@@ -2643,6 +2643,7 @@ h6 {
 
 .default-select .nice-select::after {
   right: 20px; }
+
 .formpart{
     margin: auto;
     width: 40%;
@@ -2660,13 +2661,12 @@ input{
     width: 100%;
     /* height: 20%; */
     clear: both;
+ padding-bottom: 5%;   
 }
-.noclear input{
-    width: 5%;
-    clear: none;
-}
+
 .formpart button a
 {
+  padding-top: 5%;   
   text-decoration: none;
 }
 @media (max-width: 991px) {
