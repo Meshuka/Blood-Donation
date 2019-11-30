@@ -21,7 +21,12 @@ router.get('/search',async (req, res) =>{
     } catch {
       res.redirect('/')
     }
-  })
-
+  });
+router.get('/events', function(req, res, next) {
+  res.render('events');
 });
+router.get('/eventform', function(req, res, next) {
+  res.render('eventform');
+});
+
 module.exports = router;
