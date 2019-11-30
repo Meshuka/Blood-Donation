@@ -33,12 +33,12 @@ router.get('/search',async (req, res) =>{
       res.redirect('/')
     }
   });
-=======
+// =======
 router.get('/login', function(req, res, next) {
   res.render('login');
 });
 
->>>>>>> 62caba88c01cb9d58c5b0e56d74b6880a34b824b
+// >>>>>>> 62caba88c01cb9d58c5b0e56d74b6880a34b824b
 router.get('/events', function(req, res, next) {
   res.render('events');
 });
@@ -47,7 +47,7 @@ router.get('/eventform', function(req, res, next) {
 });
 
 router.get('/notify',function(req,res,next){
-  sgMail.setApiKey('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');
+  // sgMail.setApiKey('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');
       const msg = {
         to: 'rmeshuka@gmail.com',
         from: 'joshinasla18@gmail.com',
