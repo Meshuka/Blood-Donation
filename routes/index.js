@@ -6,6 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('first', { title: 'Express' });
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login');
+});
+
 router.get('/events', function(req, res, next) {
   res.render('events');
 });
