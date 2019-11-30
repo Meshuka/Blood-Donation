@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var userdetails=require('../models/userdetail');
-
+const sgMail = require('@sendgrid/mail');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('first', { title: 'Express' });
@@ -11,7 +11,8 @@ router.get('/request', function (req, res, next) {
 });
 
 router.get('/search',async (req, res) =>{
-    let query = userdetails.find()
+   
+  let query = userdetails.find()
     if (req.query.bloodgroup != null && req.query.group != '') {
       query = query.regex('bloodgroup', new RegExp(req.query.bloodgroup, 'i'))
     }
@@ -32,15 +33,20 @@ router.get('/events', function(req, res, next) {
 router.get('/eventform', function(req, res, next) {
   res.render('eventform');
 });
+router.post('/notify', function (req, res, next) {
+  res.render('first');
+});
 
-router.get('/notify',function(req,res,next){
-  sgMail.setApiKey('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');
+router.get('/sendmail',function(req,res,next){
+  // sgMail.setApiKey('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');
       const msg = {
         to: 'rmeshuka@gmail.com',
         from: 'joshinasla18@gmail.com',
          subject: 'event',
-        text: message,
+        text: 'message',
         html: '<strong>EVENT ENCOUNTERED</strong>',
-      }
-});
+      };
+      console.log('message sent');
+      sgMail.send(msg);
+      });
 module.exports = router;
